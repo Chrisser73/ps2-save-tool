@@ -60,7 +60,16 @@ from ps2icon.icon_sys import update_icon_sys_title  # noqa: E402
 from .storage import create_slot, get_file, max_upload_bytes, result_path
 
 
-APP_VERSION = (Path(__file__).resolve().parents[2] / "VERSION").read_text(encoding="utf-8").strip()
+def _read_app_version() -> str:
+    """Find VERSION in the source checkout or the flattened container layout."""
+    for parent in Path(__file__).resolve().parents[1:3]:
+        version_file = parent / "VERSION"
+        if version_file.is_file():
+            return version_file.read_text(encoding="utf-8").strip()
+    raise RuntimeError("VERSION file is missing from the web application")
+
+
+APP_VERSION = _read_app_version()
 
 app = FastAPI(title="PS2 Save Tool Web API", version=APP_VERSION)
 app.add_middleware(
