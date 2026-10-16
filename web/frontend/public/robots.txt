@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# This application is intentionally indexable. Uploaded save files are temporary
+# backend session data and are not exposed as crawlable public URLs.

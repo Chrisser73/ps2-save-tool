@@ -1,0 +1,6 @@
+fastapi>=0.116,<1
+uvicorn[standard]>=0.35,<1
+python-multipart>=0.0.20,<1
+Pillow>=10.0
+cryptography>=42.0
+mymcplusplus>=3.1.0

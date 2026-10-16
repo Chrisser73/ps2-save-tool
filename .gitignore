@@ -1,0 +1,62 @@
+# Python cache / local environments
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+.venv-unix/
+web/backend/.venv-unix/
+venv/
+env/
+
+# Build output / PyInstaller
+_build/
+build/
+dist/
+*.spec
+
+# IDE / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local backups / temporary files
+_backups/
+logs/
+*.pid
+*.bak
+*.tmp
+*.log
+*.ink
+*.lnk
+
+# User save data / memory-card images
+*.ps2
+*.mc2
+*.mcd
+*.vm2
+*.vm1
+*.vmp
+*.mcr
+*.vmc
+*.gme
+*.vgs
+*.srm
+*.bin
+*.psv
+*.psu
+*.max
+*.cbs
+*.xps
+*.sps
+*.mcs
+*.psx
+*.ps1
+
+# Local test/export folders
+exports/
+recovered/
+/Dragons Lair 3D - Chrisser - 100% Savegame PS3 - Verknüpfung (2).lnk
+/PS1 und PS2 Game-BACKUPS - Verknüpfung.lnk
+/memcards - Verknüpfung.lnk

@@ -1,0 +1,17 @@
+# PS2 Save Tool Web
+
+PS2 Save Tool Web is a browser-based utility for PlayStation 1 and PlayStation 2 save files and memory card images.
+
+Core capabilities:
+- Inspect and convert PS2 PSV and PSU saves, including MAX export.
+- Inspect PS2 memory card images and export individual saves as PSV, PSU or MAX.
+- Manage files inside a selected PS2 save: extract, replace, add, delete and export as a folder archive.
+- Create PS1 and PS2 memory card images.
+- Inspect PS1 saves and memory cards and convert supported PS1 formats without mixing PS1 and PS2 save types.
+- Preview PS1 icons and PS2 rendered / raw texture icons.
+- Merge compatible PS2 memory cards.
+- Inject a compatible modified PS2 save into a PS3 PSV container and re-sign it.
+- Rebuild a PS2 card into a new image as an experimental repair workflow.
+
+Project author: Chrisser73
+Project profile: https://github.com/Chrisser73/

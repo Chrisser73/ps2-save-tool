@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+
+# Node / Vite
+node_modules/
+frontend/dist/
+*.tsbuildinfo
+
+# Environment / local secrets
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.lnk
+
+# Runtime / uploaded saves / memory cards
+*.ps2
+*.mc2
+*.mcd
+*.psv
+*.psu
+*.max
+*.cbs
+*.xps
+*.sps
+*.mcr
+*.vmp
+*.vgs
+*.gme
+*.mcs
+*.psx
+*.raw
+*.bin
+*.bak
+*_backups/
+exports/
+
+# Logs / temporary files
+*.log
+*.tmp
+*.temp

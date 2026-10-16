@@ -1,0 +1,10 @@
+{
+  "name": "PS2 Save Tool Web",
+  "short_name": "PS2 Save Tool",
+  "description": "PS1 / PS2 save converter and memory card manager",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#05070d",
+  "theme_color": "#05070d",
+  "icons": []
+}

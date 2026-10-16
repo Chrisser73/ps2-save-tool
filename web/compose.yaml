@@ -1,0 +1,31 @@
+name: ps2-save-tool
+
+services:
+  backend:
+    container_name: ps2-save-tool-backend
+    image: ${PS2_SAVE_TOOL_BACKEND_IMAGE:-ghcr.io/chrisser73/ps2-save-tool-api:latest}
+    restart: unless-stopped
+    environment:
+      APP_STORAGE: /tmp/ps2-save-web
+      APP_FILE_TTL: ${APP_FILE_TTL:-3600}
+      APP_MAX_UPLOAD_BYTES: ${APP_MAX_UPLOAD_BYTES:-134217728}
+    expose:
+      - "6361"
+    tmpfs:
+      - /tmp/ps2-save-web:size=512m
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:6361/api/health', timeout=3)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  frontend:
+    container_name: ps2-save-tool-frontend
+    image: ${PS2_SAVE_TOOL_FRONTEND_IMAGE:-ghcr.io/chrisser73/ps2-save-tool-web:latest}
+    restart: unless-stopped
+    ports:
+      - "${WEB_PORT:-9496}:80"
+    depends_on:
+      backend:
+        condition: service_healthy
