@@ -13,7 +13,6 @@ REQUIRED = {
     "test status badge": "actions/workflows/tests.yml/badge.svg",
     "container package link": "/pkgs/container/ps2-save-tool-web",
     "release badge": "img.shields.io/github/v/release/Chrisser73/ps2-save-tool",
-    "download badge": "img.shields.io/github/downloads/Chrisser73/ps2-save-tool/total",
     "license badge": "img.shields.io/github/license/Chrisser73/ps2-save-tool",
 }
 

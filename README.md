@@ -4,7 +4,6 @@
 [![CI](https://github.com/Chrisser73/ps2-save-tool/actions/workflows/tests.yml/badge.svg)](https://github.com/Chrisser73/ps2-save-tool/actions/workflows/tests.yml)
 [![GHCR container images](https://img.shields.io/badge/GHCR-container%20images-2496ED?logo=docker&logoColor=white)](https://github.com/Chrisser73/ps2-save-tool/pkgs/container/ps2-save-tool-web)
 [![Release](https://img.shields.io/github/v/release/Chrisser73/ps2-save-tool?display_name=tag&label=release)](https://github.com/Chrisser73/ps2-save-tool/releases)
-[![Downloads](https://img.shields.io/github/downloads/Chrisser73/ps2-save-tool/total?label=downloads)](https://github.com/Chrisser73/ps2-save-tool/releases)
 [![License](https://img.shields.io/github/license/Chrisser73/ps2-save-tool?label=license)](LICENSE)
 [![Desktop version](https://img.shields.io/badge/desktop-v0.4.1-4c1?logo=windows&logoColor=white)](CHANGELOG.md#desktop-app)
 [![Web version](https://img.shields.io/badge/web-v0.2.1-0ea5e9?logo=docker&logoColor=white)](CHANGELOG.md#web-app)
