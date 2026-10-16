@@ -24,7 +24,17 @@ def read_desktop_version() -> str:
 def read_web_versions() -> dict[str, str]:
     canonical = (ROOT / "web" / "VERSION").read_text(encoding="utf-8").strip()
     package = json.loads((ROOT / "web" / "frontend" / "package.json").read_text(encoding="utf-8"))["version"]
-    return {"web/VERSION": canonical, "web/frontend/package.json": package}
+    package_lock = json.loads((ROOT / "web" / "frontend" / "package-lock.json").read_text(encoding="utf-8"))["version"]
+    index = (ROOT / "web" / "frontend" / "index.html").read_text(encoding="utf-8")
+    match = re.search(r'"softwareVersion"\s*:\s*"([^"]+)"', index)
+    if not match:
+        raise ValueError("Could not find softwareVersion in web/frontend/index.html")
+    return {
+        "web/VERSION": canonical,
+        "web/frontend/package.json": package,
+        "web/frontend/package-lock.json": package_lock,
+        "web/frontend/index.html": match.group(1),
+    }
 
 
 def validate() -> tuple[str, str]:

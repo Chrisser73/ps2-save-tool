@@ -18,9 +18,14 @@ All notable changes are documented here. The desktop and web editions are versio
 
 - No unreleased web changes yet.
 
+### [Web 0.2.2] — 2026-10-16
+
+- Fix the backend container startup by locating `VERSION` correctly in the image.
+
 ### [Web 0.2.1] — 2026-10-16
 
 - Current web baseline: responsive browser UI, FastAPI API, Docker self-hosting, and multi-architecture image publishing.
 
 [Desktop 0.4.1]: https://github.com/Chrisser73/ps2-save-tool/releases/tag/desktop-v0.4.1
+[Web 0.2.2]: https://github.com/Chrisser73/ps2-save-tool/releases/tag/web-v0.2.2
 [Web 0.2.1]: https://github.com/Chrisser73/ps2-save-tool/releases/tag/web-v0.2.1

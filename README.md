@@ -6,7 +6,7 @@
 [![Release](https://img.shields.io/github/v/release/Chrisser73/ps2-save-tool?display_name=tag&label=release)](https://github.com/Chrisser73/ps2-save-tool/releases)
 [![License](https://img.shields.io/github/license/Chrisser73/ps2-save-tool?label=license)](LICENSE)
 [![Desktop version](https://img.shields.io/badge/desktop-v0.4.1-4c1?logo=windows&logoColor=white)](CHANGELOG.md#desktop-app)
-[![Web version](https://img.shields.io/badge/web-v0.2.1-0ea5e9?logo=docker&logoColor=white)](CHANGELOG.md#web-app)
+[![Web version](https://img.shields.io/badge/web-v0.2.2-0ea5e9?logo=docker&logoColor=white)](CHANGELOG.md#web-app)
 
 **PS2 Save Tool** is the project name, but the toolset goes further: edit and convert PS1/PS2 saves, prepare compatible PS2 saves for PS3 PS2 Classics, and manage PS1/PS2 memory cards. Choose the desktop app for a native interface or the web edition for responsive self-hosting in a browser.
 
@@ -97,7 +97,7 @@ The packaged `.exe` is intentionally a Windows-only artifact. On Linux, macOS, o
 
 ## Web app (Vue / FastAPI)
 
-**Current web version:** 0.2.1. The web edition has a Vue 3 frontend, FastAPI backend, and Nginx production frontend.
+**Current web version:** 0.2.2. The web edition has a Vue 3 frontend, FastAPI backend, and Nginx production frontend.
 
 ### Run locally without Docker
 
@@ -191,7 +191,7 @@ The **Publish web images** workflow runs on pushes to `main` and pushes the two 
 
 ## Versions and releases
 
-Desktop and web releases are independent: the current versions are **desktop 0.4.1** and **web 0.2.1**. A desktop-only Windows fix can therefore be released as `desktop-v0.4.2` without changing the web edition; a web-only feature can become `web-v0.2.2` without rebuilding the Windows executable.
+Desktop and web releases are independent: the current versions are **desktop 0.4.1** and **web 0.2.2**. A desktop-only Windows fix can therefore be released as `desktop-v0.4.2` without changing the web edition; a web-only feature can become `web-v0.2.3` without rebuilding the Windows executable.
 
 Use `make preflight` before releasing. It installs missing local test/build dependencies, verifies semantic versions and README badge sources, runs both Python test suites, and creates the production frontend build. Each run writes a timestamped log under `logs/`; the directory is deliberately ignored by Git. Then follow the component-specific steps in [RELEASING.md](RELEASING.md). The [CHANGELOG.md](CHANGELOG.md) has separate Desktop and Web sections linked to their corresponding GitHub releases; pushing a matching `desktop-vX.Y.Z` or `web-vX.Y.Z` tag validates the component and automatically creates that GitHub Release.
 
