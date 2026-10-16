@@ -1,5 +1,5 @@
-![PlayStation Save & Memory Card Tools header](docs/images/readme-header-placeholder.svg)
-# PlayStation Save & Memory Card Tools
+![PlayStation 2 Save & Memory Card Tools header](docs/images/readme-header-placeholder.svg)
+# PS2 Save & Memory Card Tools
 
 [![CI](https://github.com/Chrisser73/ps2-save-tool/actions/workflows/tests.yml/badge.svg)](https://github.com/Chrisser73/ps2-save-tool/actions/workflows/tests.yml)
 [![GHCR container images](https://img.shields.io/badge/GHCR-container%20images-2496ED?logo=docker&logoColor=white)](https://github.com/Chrisser73/ps2-save-tool/pkgs/container/ps2-save-tool-web)
